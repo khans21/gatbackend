@@ -79,6 +79,17 @@ app.use(cors());
 const database = {
   username: "Mohammed Sauood",
 };
+app.get("/",(req,res)=>{
+    res.send("hello from backend")
+})
+
+app.get("/mohammed",(req,res)=>{
+    res.send("hello from mohammed")
+})
+
+app.get("/global",(req,res)=>{
+    res.send("hello from global ge bal")
+})
 
 app.post("/verify-username", (req, res) => {
   const { username } = req.body;
