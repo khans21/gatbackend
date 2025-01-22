@@ -90,6 +90,9 @@ app.get("/mohammed",(req,res)=>{
 app.get("/global",(req,res)=>{
     res.send("hello from global ge bal")
 })
+app.get("/electrical",(req,res)=>{
+    res.send("hello from electrical branch")
+})
 
 app.post("/verify-username", (req, res) => {
   const { username } = req.body;
